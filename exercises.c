@@ -25,6 +25,7 @@ Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
+  int temp;
   
 }
 
@@ -35,6 +36,7 @@ y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
+  int *parArr = malloc(size * sizeof(int));
   int parArr[*newSize];
   *newSize = 0;
   

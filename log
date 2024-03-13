@@ -216,3 +216,24 @@ exercises.c:47:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 d590f78
+Wed 13 Mar 2024 09:17:42 PM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:28:7: error: unused variable ‘temp’ [-Werror=unused-variable]
+   28 |   int temp;
+      |       ^~~~
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:40:7: error: conflicting types for ‘parArr’; have ‘int[*newSize]’
+   40 |   int parArr[*newSize];
+      |       ^~~~~~
+exercises.c:39:8: note: previous definition of ‘parArr’ with type ‘int *’
+   39 |   int *parArr = malloc(size * sizeof(int));
+      |        ^~~~~~
+exercises.c:49:10: error: function returns address of local variable [-Werror=return-local-addr]
+   49 |   return parArr;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+53ee0a2
