@@ -11,3 +11,17 @@ Wed 13 Mar 2024 08:42:55 PM UTC:
  tests:  0|6
 total_score: 10/70
 7e62564
+Wed 13 Mar 2024 08:44:44 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:28:27: error: expected expression before ‘]’ token
+   28 |   int arrOriginal[] = arr[];
+      |                           ^
+exercises.c:28:7: error: unused variable ‘arrOriginal’ [-Werror=unused-variable]
+   28 |   int arrOriginal[] = arr[];
+      |       ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+44fe088
