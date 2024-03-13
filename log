@@ -180,3 +180,17 @@ exercises.c:47:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 ad80b50
+Wed 13 Mar 2024 09:13:16 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:43:13: error: array subscript is not an integer
+   43 |       parArr[newSize] = arr[i];
+      |             ^
+exercises.c:47:10: error: function returns address of local variable [-Werror=return-local-addr]
+   47 |   return parArr;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+25b6289
