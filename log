@@ -237,3 +237,20 @@ exercises.c:49:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 53ee0a2
+Wed 13 Mar 2024 09:18:05 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:39:7: error: conflicting types for ‘parArr’; have ‘int[*newSize]’
+   39 |   int parArr[*newSize];
+      |       ^~~~~~
+exercises.c:38:8: note: previous definition of ‘parArr’ with type ‘int *’
+   38 |   int *parArr = malloc(size * sizeof(int));
+      |        ^~~~~~
+exercises.c:48:10: error: function returns address of local variable [-Werror=return-local-addr]
+   48 |   return parArr;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f5728ee
