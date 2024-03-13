@@ -39,3 +39,20 @@ exercises.c:47:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 e6e402c
+Wed 13 Mar 2024 08:52:42 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:42:7: error: called object ‘parArr’ is not a function or function pointer
+   42 |       parArr(*newSize) = arr[i];
+      |       ^~~~~~
+exercises.c:38:7: note: declared here
+   38 |   int parArr[*newSize];
+      |       ^~~~~~
+exercises.c:47:10: error: function returns address of local variable [-Werror=return-local-addr]
+   47 |   return parArr;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d4b9095
