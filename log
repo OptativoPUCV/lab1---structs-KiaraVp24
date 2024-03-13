@@ -163,3 +163,20 @@ exercises.c:46:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 84cf228
+Wed 13 Mar 2024 09:12:50 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:39:7: error: ‘newSize’ redeclared as different kind of symbol
+   39 |   int newSize = 0;
+      |       ^~~~~~~
+exercises.c:37:50: note: previous definition of ‘newSize’ with type ‘int *’
+   37 | int *filterEvenNumbers(int arr[], int size, int *newSize) {
+      |                                             ~~~~~^~~~~~~
+exercises.c:47:10: error: function returns address of local variable [-Werror=return-local-addr]
+   47 |   return parArr;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ad80b50
