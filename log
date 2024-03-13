@@ -265,3 +265,24 @@ exercises.c:47:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 7596041
+Wed 13 Mar 2024 09:20:17 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:47:16: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   47 |   return parArr[talla];
+      |          ~~~~~~^~~~~~~
+exercises.c:47:16: error: array subscript talla is outside array bounds of ‘int[<U2360>]’ [-Werror=array-bounds]
+exercises.c:39:7: note: while referencing ‘parArr.61’
+   39 |   int parArr[talla];
+      |       ^~~~~~
+exercises.c:43:13: error: array subscript talla is outside array bounds of ‘int[<U2360>]’ [-Werror=array-bounds]
+   43 |       parArr[talla] = arr[i];
+      |       ~~~~~~^~~~~~~
+exercises.c:39:7: note: while referencing ‘parArr.61’
+   39 |   int parArr[talla];
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c99417a
