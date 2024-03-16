@@ -997,3 +997,9 @@ exercises.c:45:7: note: while referencing ‘arrPar.61’
 cc1: all warnings being treated as errors
 Compilation failed
 5d30b57
+Sat 16 Mar 2024 05:18:49 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+ tests:  0|4
+total_score: 30/70
+cef7bf2
