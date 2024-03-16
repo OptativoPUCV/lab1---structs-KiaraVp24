@@ -25,7 +25,13 @@ Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
-  
+  int temp;
+  int j = size - 1;
+  for (int i = 0; i < j; i++, j--) {
+    temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
 }
 
 /*
@@ -35,7 +41,7 @@ y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
-  int talla = 1;
+  /*int talla = 1;
   int parArr[talla];
   
   for (int i = 0; i < size; i++) {
@@ -44,7 +50,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
       (talla)++;
     }
   }
-  return parArr[talla];
+  return parArr[talla];*/
 }
 
 /*
