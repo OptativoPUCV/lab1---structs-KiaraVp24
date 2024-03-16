@@ -362,3 +362,31 @@ exercises.c:55:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 9d7fcf5
+Sat 16 Mar 2024 04:48:37 PM UTC: 
+ exercises.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:31:31: error: expected ‘;’ before ‘]’ token
+   31 |     arr[i] = arr[size - 1 - i]];
+      |                               ^
+      |                               ;
+exercises.c:31:31: error: expected statement before ‘]’ token
+exercises.c:32:8: error: statement with no effect [-Werror=unused-value]
+   32 |     arr[size - 1 - i]] = temp;
+      |     ~~~^~~~~~~~~~~~~~
+exercises.c:32:22: error: expected ‘;’ before ‘]’ token
+   32 |     arr[size - 1 - i]] = temp;
+      |                      ^
+      |                      ;
+exercises.c:32:22: error: expected statement before ‘]’ token
+exercises.c:32:24: error: expected expression before ‘=’ token
+   32 |     arr[size - 1 - i]] = temp;
+      |                        ^
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:54:1: error: control reaches end of non-void function [-Werror=return-type]
+   54 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+102ea04
