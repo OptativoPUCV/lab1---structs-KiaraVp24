@@ -906,3 +906,17 @@ exercises.c:45:7: error: unused variable ‘arrPar’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ff3c564
+Sat 16 Mar 2024 05:11:17 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:48:17: error: statement with no effect [-Werror=unused-value]
+   48 |       arrPar[i] == arr[i];
+      |       ~~~~~~~~~~^~~~~~~~~
+exercises.c:53:10: error: function returns address of local variable [-Werror=return-local-addr]
+   53 |   return arrPar;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a26d18f

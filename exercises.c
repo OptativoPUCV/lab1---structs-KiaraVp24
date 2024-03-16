@@ -45,11 +45,12 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int arrPar[*newSize];
   for (int i = 0; i < size; i++) {
     if (arr[i] % 2 == 0) {
+      arrPar[i] == arr[i];
       pares++;
     }
     *newSize = pares;
   }
-  return NULL;
+  return arrPar;
 }
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
