@@ -959,3 +959,20 @@ exercises.c:45:7: note: while referencing ‘arrPar.61’
 cc1: all warnings being treated as errors
 Compilation failed
 0d801d6
+Sat 16 Mar 2024 05:15:32 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:10: error: function returns address of local variable [-Werror=return-local-addr]
+   53 |   return arrPar;
+      |          ^~~~~~
+exercises.c:48:13: error: array subscript pares is outside array bounds of ‘int[<U9480>]’ [-Werror=array-bounds]
+   48 |       arrPar[pares] = arr[i];
+      |       ~~~~~~^~~~~~~
+exercises.c:45:7: note: while referencing ‘arrPar.61’
+   45 |   int arrPar[pares];
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+836f5e3
