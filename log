@@ -1183,3 +1183,9 @@ exercises.c:164:9: error: variable ‘ultimo’ set but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 404df94
+Sat 16 Mar 2024 08:27:59 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+ tests:  0|0
+total_score: 70/70
+a8638a9
