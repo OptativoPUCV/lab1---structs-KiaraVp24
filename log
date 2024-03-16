@@ -425,3 +425,14 @@ test.c:47:6: error: ‘readIntArray’ defined but not used [-Werror=unused-func
 cc1: all warnings being treated as errors
 Compilation failed
 5ea14a2
+Sat 16 Mar 2024 04:51:04 PM UTC: 
+ exercises.c | 13 +------------
+ 1 file changed, 1 insertion(+), 12 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:43:60: error: control reaches end of non-void function [-Werror=return-type]
+   43 | int *filterEvenNumbers(int arr[], int size, int *newSize) {}
+      |                                                            ^
+cc1: all warnings being treated as errors
+Compilation failed
+3557033
