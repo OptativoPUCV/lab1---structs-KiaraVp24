@@ -1034,3 +1034,13 @@ exercises.c:64:7: error: unused variable ‘size3’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 f56c3d4
+Sat 16 Mar 2024 05:28:56 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:65:19: error: expected expression before ‘{’ token
+   65 |   result[size3] = {0};
+      |                   ^
+Compilation failed
+43b1623
