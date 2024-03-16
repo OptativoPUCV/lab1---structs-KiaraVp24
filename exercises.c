@@ -26,10 +26,11 @@ invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
   int temp;
-  for (int i = 0; i < size / 2; i++) {
+  int j = size - 1;
+  for (int i = 0; i < j; i++, j--) {
     temp = arr[i];
-    arr[i] = arr[size - 1 - i];
-    arr[size - 1 - i] = temp;
+    arr[i] = arr[j];
+    arr[j] = temp;
   }
 }
 
@@ -40,7 +41,18 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) {return NULL;}
+int *filterEvenNumbers(int arr[], int size, int *newSize) { 
+  /*int talla = 1;
+  int parArr[talla];
+
+  for (int i = 0; i < size; i++) {
+    if (arr[i] % 2 == 0) {
+      parArr[talla] = arr[i];
+      (talla)++;
+    }
+  }
+  return parArr[talla];
+} */
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
@@ -49,7 +61,7 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) 
+                       int result[]) {}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
