@@ -32,7 +32,8 @@ void reverseArray(int arr[], int size) {
     arr[i] = arr[j];
     arr[j] = temp;
   }
-}
+]
+
 
 /*
 Ejercicio 3: Filtrar Números Pares
