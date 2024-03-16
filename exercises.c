@@ -50,8 +50,8 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
       (talla)++;
     }
   }
-  return parArr[talla];*/
-}
+  return parArr[talla];
+} */
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
