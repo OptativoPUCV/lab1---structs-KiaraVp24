@@ -36,16 +36,26 @@ void reverseArray(int arr[], int size) {
 
 /*
 Ejercicio 3: Filtrar Números Pares
-Descripción: Escribe una función que tome un arreglo de enteros
-y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
-los números pares del arreglo original.
+Descripción: Escribe una función que tome un arreglo de enteros y su tamaño, y luego devuelva un nuevo arreglo que contenga solo los números pares del arreglo original.
+newsize apunta a una dirección válida que no ha sido inicializada con nigún valor específico.
+*newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) {return NULL;}
+int *filterEvenNumbers(int arr[], int size, int *newSize) {
+  int pares = 0;
+  int arrPar[*newSize];
+  for (int i = 0; i < size; i++) {
+    if (arr[i] % 2 == 0) {
+      pares++;
+    }
+    *newSize = pares;
+  }
+  return NULL;
+}
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
-Descripción: Escribe una función que tome dos arreglos
-ordenados y sus tamaños, y luego fusione estos dos
-arreglos en un tercer arreglo también ordenado.
+Descripción: Escribe una función que tome dos arreglos 
+ordenados de menor a mayor y sus tamaños, y luego fusione estos dos 
+arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) {}

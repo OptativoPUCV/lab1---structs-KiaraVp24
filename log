@@ -895,3 +895,14 @@ Sat 16 Mar 2024 05:02:44 PM UTC:
  tests:  0|5
 total_score: 20/70
 83f134e
+Sat 16 Mar 2024 05:10:18 PM UTC: 
+ exercises.c | 22 ++++++++++++++++------
+ 1 file changed, 16 insertions(+), 6 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:45:7: error: unused variable ‘arrPar’ [-Werror=unused-variable]
+   45 |   int arrPar[*newSize];
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ff3c564
