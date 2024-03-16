@@ -297,3 +297,14 @@ exercises.c:47:16: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 49bf610
+Sat 16 Mar 2024 04:37:27 PM UTC: 
+ exercises.c | 13 +------------
+ 1 file changed, 1 insertion(+), 12 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:47:16: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   47 |   return parArr[talla];
+      |          ~~~~~~^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6a21f63
